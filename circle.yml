@@ -7,7 +7,7 @@ deployment:
   production:
     branch: production
     commands:
-      - aws s3 sync / s3://helplouisiana.com/ --delete
+      - aws s3 sync web/ s3://helplouisiana.com/ --delete
 notify:
   webhooks:
 
