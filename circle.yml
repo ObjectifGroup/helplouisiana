@@ -1,0 +1,13 @@
+dependencies:
+  override:
+test:
+  override:
+    - echo "no tests being run!"
+deployment:
+  production:
+    branch: production
+    commands:
+      - aws s3 sync / s3://helplouisiana.com/ --delete
+notify:
+  webhooks:
+
